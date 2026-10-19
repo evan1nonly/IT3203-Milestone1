@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IT 3203 research website exploring the history, technology, and future of web browsers.">
+  <title>How Browsers Work | Web Browsers Explained</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Shared site navigation: keep the same links on every page. -->
+  <header class="site-header">
+    <div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark">◎</span> Browser<span class="brand-accent">Lab</span></a>
+      <nav aria-label="Main navigation"><a href="index.html">Home</a>
+<a href="history.html">History</a>
+<a href="technology.html" aria-current="page">How Browsers Work</a>
+<a href="concepts.html">Key Concepts</a>
+<a href="references.html">References</a>
+<a href="about.html">About</a></nav>
+    </div>
+  </header>
+  <main id="main-content" class="container">
+    <section class="page-intro"><p class="eyebrow">SECTION 02 • TECHNOLOGY</p><h1>How Browsers Work</h1><p class="lead">A browser coordinates networking, HTML, CSS, JavaScript, and security to turn a URL into a usable page.</p></section>
+    
+<section class="section"><h2>From URL to webpage</h2><figure class="diagram"><img src="images/rendering-flow.svg" alt="Six stages: URL, DNS, HTTPS, HTTP, DOM and CSSOM, layout and paint"><figcaption>A simplified page-loading and rendering sequence.</figcaption></figure><ol class="steps"><li><strong>Read the URL.</strong> The browser identifies the requested resource.</li><li><strong>Look up the server.</strong> DNS translates a domain into an IP address.</li><li><strong>Establish a secure connection.</strong> HTTPS uses TLS to protect communication.</li><li><strong>Request resources.</strong> HTTP carries HTML and other files to the browser.</li><li><strong>Build page structures.</strong> HTML becomes the DOM; CSS becomes the CSSOM.</li><li><strong>Render the result.</strong> The browser calculates layout, paints content, and composites layers.</li></ol></section>
+<section class="section"><h2>Core components</h2><div class="card-grid"><article class="mini-card"><h3>Network stack</h3><p>Manages DNS, connections, HTTP, and caching.</p></article><article class="mini-card"><h3>Rendering engine</h3><p>Processes HTML and CSS to calculate what appears on screen.</p></article><article class="mini-card"><h3>JavaScript engine</h3><p>Executes code that makes pages respond to user actions.</p></article><article class="mini-card"><h3>Storage</h3><p>Handles cookies, caches, and other local website data.</p></article><article class="mini-card"><h3>Security boundaries</h3><p>Use sandboxing, process isolation, and permissions to reduce risk.</p></article><article class="mini-card"><h3>Developer tools</h3><p>Help inspect HTML, test CSS, debug scripts, and measure performance.</p></article></div></section>
+<section class="section split"><div><h2>Security and privacy</h2><p>Browsers process untrusted content, so sandboxing and site isolation help prevent a compromised page from affecting the rest of the system. Certificate checks and safe-browsing warnings also help reduce threats.</p><p>Privacy features may restrict tracking and third-party storage. Private browsing reduces locally saved history but does not make someone anonymous online.</p></div><div class="info-panel"><h3>What comes next?</h3><ul><li>AI-assisted browsing and page understanding</li><li>Passkeys and stronger sign-in methods</li><li>More local processing and privacy controls</li><li>Continued browser engine competition</li></ul></div></section>
+
+  </main>
+  <!-- Course attribution required by Milestone 1. -->
+  <footer class="site-footer"><div class="container footer-inner"><span>IT 3203 • Fall 2026 • Class project by Evan Clark</span><a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener noreferrer">IT 3203 course website ↗</a></div></footer>
+</body>
+</html>
